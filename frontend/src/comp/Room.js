@@ -37,7 +37,7 @@ const Room = () => {
   const enter = () => {
     socketRef.current = io.connect(
       // "https://xytebackend-production.up.railway.app/"
-      `https://xyte-meet.web.app/room/${roomID}`
+      `https://zoom-meet-ktms.onrender.com/room/${roomID}`
     ); // backend url
     navigator.mediaDevices
       .getUserMedia({ video: true, audio: true })
