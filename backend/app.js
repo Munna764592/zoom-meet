@@ -94,10 +94,7 @@ io.on("connection", (socket) => {
   });
 });
 
-// Catchall handler: for any request that doesn't match one above, send back React's index.html file.
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+
 
 server.listen(3001, () => {
   console.log("Server started at http://localhost:3001");
